@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cell_light"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="X"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="schoolName"
+        />
+
+    <TextView
+        android:id="@+id/dbn_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@+id/dbn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="DBN"
+        />
+
+    <TextView
+        android:id="@+id/sat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/dbn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Number of SAT Takers"
+        />
+
+    <TextView
+        android:id="@+id/reading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/satTakers"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Critical Reading avg score"
+        />
+
+    <TextView
+        android:id="@+id/math_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/readingScore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Math average score"
+        />
+
+    <TextView
+        android:id="@+id/writing_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/mathScore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Writing average score"
+        />
+
+    <TextView
+        android:id="@+id/dbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/schoolName"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="right"
+        android:hint="dbn"
+        />
+
+    <TextView
+        android:id="@+id/satTakers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/dbn"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="right"
+        android:hint="SAT Takers"
+        />
+
+    <TextView
+        android:id="@+id/readingScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/satTakers"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="right"
+        android:hint="reading average"
+        />
+
+    <TextView
+        android:id="@+id/mathScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/readingScore"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="right"
+        android:hint="math average"
+        />
+
+    <TextView
+        android:id="@+id/writingScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/mathScore"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="right"
+        android:hint="writing average"
+        />
+
+</android.support.constraint.ConstraintLayout>
